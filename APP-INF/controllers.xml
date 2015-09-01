@@ -1,6 +1,7 @@
 <controllers>
-    <source>/APP-INF/app.js</source>
+    <source>/APP-INF/app.js</source>        <!-- Controller Mappings -->
+    <source>/APP-INF/API.js</source>        <!-- API Functions -->
+    <source>/APP-INF/QR_CODE.js</source>    <!-- Handle QR Codes -->
     
-    <menu parentId="menuRoot" id="menuManageHelloWorlds" text="I need coffee!" css="fa fa-coffee" ordering="45"/>
-    <menu parentId="menuManageHelloWorlds" id="menuManageHelloWorld" text="Make me a coffee" path="/helloWorld/" ordering="45"/>
+    <menu parentId="menuRoot" id="menuManagebarcodesApp" css="fa fa-qrcode" text="Manage Barcodes" path="/manageBarCodes/" ordering="45"/>
 </controllers>

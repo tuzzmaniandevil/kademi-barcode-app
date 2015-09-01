@@ -1,6 +1,6 @@
 controllerMappings
         .adminController()
-        .path("/helloWorld/")
+        .path("/manageBarCodes/")
         .enabled(true)
         .defaultView(views.templateView("helloWorld/manageHelloWorld.html"))
         .build();

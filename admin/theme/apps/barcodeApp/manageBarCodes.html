@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        #set($config = $formatter.newMap())
+        #call($config.put('type', 'QR_CODE'))
+        #call($config.put('qr_type', 'wifi'))
+        #call($config.put("ssid", '"Hello World"'))
+        #call($config.put("password", 'password'))
+        #call($config.put("security", 'WPA'))
+        $config
+        <br/>
+        $controllers.call("generate", $config)
+        <br/>
+        <img style="max-width:400px;" src="/_hashes/files/$controllers.call('genQrCode')" />
+        #macro(call $i)
+        #if($i)#end
+        #end
+    </body>
+</html>
